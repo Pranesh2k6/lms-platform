@@ -1,0 +1,45 @@
+{
+  "name": "lms-backend",
+  "version": "1.0.0",
+  "description": "Learning Management System Backend API with Socket.IO and AI Assistant",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node scripts/seed.js",
+    "prod": "NODE_ENV=production node server.js"
+  },
+  "keywords": ["lms", "education", "backend", "api", "socket.io", "ai", "ollama"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.2",
+    "@ai-sdk/google": "^3.0.2",
+    "ai": "^6.0.5",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "multer": "^2.0.2",
+    "ollama": "^0.6.3",
+    "papaparse": "^5.5.3",
+    "pdf-parse": "^2.4.5",
+    "sharp": "^0.34.5",
+    "socket.io": "^4.6.1",
+    "tesseract.js": "^7.0.0",
+    "uuid": "^13.0.0",
+    "xlsx": "^0.18.5",
+    "zod": "^4.3.4",
+    "zod-to-json-schema": "^3.25.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
